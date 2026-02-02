@@ -1,0 +1,81 @@
+isqhiiiiii.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For isqhiiiiii 💖</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#ffe6ef, #ffd6e7);
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 22px;
+      text-align: center;
+      width: 330px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+    h2 { margin-bottom: 25px; }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .yes {
+      background: #ff4081;
+      color: white;
+    }
+    .no {
+      background: #eee;
+      position: relative;
+    }
+    .hint {
+      margin-top: 18px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>isqhiiiiii 💖 will you be my valentine?</h2>
+
+    <div class="buttons">
+      <button class="yes" onclick="yesClick()">Yes</button>
+      <button class="no" onmouseover="moveNo()">No</button>
+    </div>
+
+    <p class="hint">"No" thoda shy lag raha hai 😈</p>
+  </div>
+
+<script>
+function moveNo() {
+  const btn = document.querySelector('.no');
+  const x = Math.random() * 160 - 80;
+  const y = Math.random() * 160 - 80;
+  btn.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function yesClick() {
+  document.querySelector('.card').innerHTML = `
+    <h2>Hehehe 💕</h2>
+    <p>isqhiiiiii, you just made my heart smile 🫶</p>
+  `;
+}
+</script>
+</body>
+</html>
